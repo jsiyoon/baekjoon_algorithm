@@ -15,7 +15,7 @@ public class J_11652 {
 		}
 		Arrays.sort(arr);
 		
-		int cnt = 1, max = 0, num = 0;
+		int cnt = 1, max = 1, num = 0;
 		for(int i = 1; i < count; i++) {
 			if(arr[i-1] == arr[i]) cnt++;
 			else {
