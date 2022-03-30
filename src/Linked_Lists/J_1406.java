@@ -5,10 +5,11 @@ import java.util.*;
 public class J_1406 {
 	static String str;
 	static int count;
+	
+	//stack사용
 	public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		StringBuilder sb = new StringBuilder();
 		
 		Stack<Character> stack = new Stack<>();
 		Stack<Character> stack2 = new Stack<>();
@@ -43,14 +44,15 @@ public class J_1406 {
 		}
 		
 		while(!stack2.isEmpty()) {
-			sb.append(stack2.pop());
+			bw.write(stack2.pop());
 		}
 		
-		bw.write(sb + "\n");
 		bw.flush();
 		bw.close();
 		br.close();
 	}
+	
+	//LinkedList사용.
 	/*public static void main(String[] args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
